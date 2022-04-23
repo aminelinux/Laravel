@@ -20,8 +20,11 @@
             }
         </style>
     </head>
-    <body>
-        <div class="container">
+    <body class="bg-white dark:bg-slate-900 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
+        <h1 class="text-3xl font-bold underline text-center">
+        Hello world!
+  </h1>
+        <div >
             @yield('content')
         </div>
     </body>
