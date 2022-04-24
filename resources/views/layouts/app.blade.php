@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>{{config('app.name','LSAPP')}}</title>
+        <title>{{config('app.name','formation app')}}</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -21,10 +21,8 @@
         </style>
     </head>
     <body class="bg-white dark:bg-slate-900 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
-        <h1 class="text-3xl font-bold underline text-center">
-        Hello world!
-  </h1>
-        <div >
+        @include('inc.navbar')
+        <div class=" container bg-white dark:bg-slate-900 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
             @yield('content')
         </div>
     </body>

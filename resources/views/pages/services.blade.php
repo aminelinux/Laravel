@@ -2,9 +2,9 @@
     @section('content')
         <h1>{{$title}}</h1>
         @if (count($services)>0)
-            <ul>
+            <ul class="divide-y-2 divide-gray-100">
                 @foreach ($services as $service)
-                <li>{{$service}}</li>
+                <li class="p-3">{{$service}}</li>
                 @endforeach
             </ul>
         @endif
