@@ -19,6 +19,7 @@ use App\Http\Controllers\PostsController;
 Route::get('/', [PagesController::class , 'index']);
 Route::get('/about', [PagesController::class, 'about']);
 Route::get('/services', [PagesController::class, 'services']);
+Route::get('/contact',[PagesController::class,'contact']);
 
 //getResourceRouteName($resource 'model', $method, $options);
-Route::resource('Post',PostsController::class);
+Route::resource('/Post',PostsController::class);

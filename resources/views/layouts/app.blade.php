@@ -23,6 +23,7 @@
     <body class="bg-white dark:bg-slate-900 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
         @include('inc.navbar')
         <div class=" container bg-white dark:bg-slate-900 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
+            @include('inc.messages')
             @yield('content')
         </div>
     </body>
